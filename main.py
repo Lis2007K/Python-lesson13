@@ -25,3 +25,20 @@ print(df)
 
 best_selling_products = sale_seriers.idxmax()
 print(f"Best selling products:{best_selling_products}")
+
+data2 = {'Country' :['Germany', 'Swiss', 'Tirana'],
+         }
+
+df2 = pd.read_csv('avgIQpercountry.csv')
+print(df2.info())
+
+print_rows = df2.head()
+
+first_rows = df2.head()
+print(first_rows)
+
+subset = df[['Country','Avarage IQ']]
+print(subset)
+
+filtered_df = subset[subset['Avarage IQ'] | 100]
+print*filtered_df
